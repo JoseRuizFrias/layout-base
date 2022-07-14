@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 8%;
+}
+.container .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-weight: bold;
+}
+.container .box.base {
+  background-color: red;
+}
+.container .box.important {
+  background-color: brown;
+  filter: brightness(0.5);
+}
+.container .box.principal-font {
+  font-weight: normal;
+  background-color: white;
+  padding: 20px 0px 30px 0px;
+  align-items: baseline;
+  font-family: "Arial", "Arial", cursive;
+}
+.container .box.principal-font .secondary-font {
+  padding: 20px 0px 0px 0px;
+  align-items: baseline;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  white-space: nowrap;
+}
+.container .box.warning {
+  background-color: pink;
+}
+.container .box.box-with-shadow {
+  background-color: white;
+  border: black 1px solid;
+  box-shadow: -5px 10px 5px #888888;
+}
+
+/*# sourceMappingURL=/style1.cb3e1a67.css.map */
