@@ -4,15 +4,14 @@ body{
     justify-content: flex-start;
     gap: 10px;
 
-    .color-box-text {
-        color:grey
-    }
-
     .container-1{
         display: flex;
         flex-direction: row;
         gap: 20px;
         --color: #FF1818;
+        .color-box-text {
+            color:rgb(195, 201, 219)
+        }
     }
 
     .container-2{
@@ -20,6 +19,9 @@ body{
         flex-direction: row;
         gap: 20px;
         --color: #060EF5;
+        .color-box-text {
+            color:rgb(167, 164, 164)
+        }
     }
 
     .container-3{
@@ -27,6 +29,9 @@ body{
         flex-direction: row;
         gap: 20px;
         --color: #1EBC0B;
+        .color-box-text {
+            color:rgb(99, 95, 95)
+        }
     }
 
     .box {
@@ -34,6 +39,9 @@ body{
 
         &.base-color {
             background-color: var(--color);
+            .color-box-text {
+                color: white
+            }
         }
 
         &.darken-1 {

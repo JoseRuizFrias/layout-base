@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+body .container-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  --color: #FF1818;
+}
+body .container-1 .color-box-text {
+  color: rgb(195, 201, 219);
+}
+body .container-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  --color: #060EF5;
+}
+body .container-2 .color-box-text {
+  color: rgb(167, 164, 164);
+}
+body .container-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  --color: #1EBC0B;
+}
+body .container-3 .color-box-text {
+  color: rgb(99, 95, 95);
+}
+body .box {
+  padding: 30px;
+}
+body .box.base-color {
+  background-color: var(--color);
+}
+body .box.base-color .color-box-text {
+  color: white;
+}
+body .box.darken-1 {
+  background-color: var(--color);
+  filter: brightness(0.85);
+}
+body .box.darken-2 {
+  background-color: var(--color);
+  filter: brightness(0.75);
+}
+body .box.darken-3 {
+  background-color: var(--color);
+  filter: brightness(0.55);
+}
+body .box.darken-4 {
+  background-color: var(--color);
+  filter: brightness(0.45);
+}
+body .box.lighten-1 {
+  background-color: var(--color);
+  filter: brightness(3.5);
+}
+body .box.lighten-2 {
+  background-color: var(--color);
+  filter: brightness(4.5);
+}
+body .box.lighten-3 {
+  background-color: var(--color);
+  filter: brightness(5.5);
+}
+body .box.lighten-4 {
+  background-color: var(--color);
+  filter: brightness(7);
+}
+
+/*# sourceMappingURL=/styles.164d45a1.css.map */
