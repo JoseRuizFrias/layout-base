@@ -1,0 +1,61 @@
+.container{
+
+    display: flex;
+    flex-direction: column;
+
+    .container__title{
+        padding: 5px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .container__menu{
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        background-color: rgb(11, 125, 139);
+        color: white;
+        
+        :hover{
+            background-color: rgb(7, 64, 71);
+        }
+
+        .container__home{
+            padding: 15px 100px 10px 10px;
+        }
+        .container__blog{
+            padding: 15px 100px 10px 10px;
+        }
+        .container__activities{
+            padding: 15px 10px 10px 10px;
+        }
+        .container__aboutme{
+            padding: 15px 10px 10px 100px;
+        }
+    }
+
+    @media (max-width: 650px) {
+
+        .container__menu {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            font-weight: bold;
+
+            .container__home{
+                padding: 15px 10px 10px 10px;
+            }
+            .container__blog{
+                padding: 15px 10px 10px 10px;
+            }
+            .container__activities{
+                padding: 15px 10px 10px 10px;
+            }
+            .container__aboutme{
+                padding: 15px 10px 10px 10px;
+            }
+
+        }
+    }
+}
+

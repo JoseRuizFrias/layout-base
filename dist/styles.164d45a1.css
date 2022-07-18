@@ -1,76 +1,60 @@
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 10px;
+.container {
+  display: grid;
+  grid-template-columns: 30%;
+  font-family: "Arial", "Arial", cursive;
 }
-body .container-1 {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  --color: #FF1818;
+.container .container__picture {
+  grid-column: 1/span 2;
+  grid-row: 1/2;
 }
-body .container-1 .color-box-text {
-  color: rgb(195, 201, 219);
+.container .container__picture .container__picture--size {
+  width: 30%;
 }
-body .container-2 {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  --color: #060EF5;
+.container .container__title {
+  grid-column: 1/span 2;
+  grid-row: 2;
+  padding: 10px;
+  font-size: 30px;
 }
-body .container-2 .color-box-text {
-  color: rgb(167, 164, 164);
+.container .container__description {
+  grid-column: 1/span 2;
+  grid-row: 3;
+  padding: 20px;
+  width: 25%;
 }
-body .container-3 {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  --color: #1EBC0B;
+.container .container__published {
+  grid-column: 1;
+  grid-row: 4;
+  padding: 5px;
+  text-align: right;
+  font-weight: bold;
 }
-body .container-3 .color-box-text {
-  color: rgb(99, 95, 95);
+.container .container__published .container__date {
+  color: rgb(52, 199, 52);
+  font-weight: normal;
+  padding-right: 4%;
 }
-body .box {
-  padding: 30px;
-}
-body .box.base-color {
-  background-color: var(--color);
-}
-body .box.base-color .color-box-text {
+.container .container__button {
+  grid-column: 1/span 2;
+  grid-row: 5;
+  font-size: 20px;
+  width: 28%;
+  padding: 10px 0px 10px 0px;
+  background-color: rgb(52, 199, 52);
   color: white;
+  text-align: center;
+  border-top-width: 10px;
+  border-top-style: solid;
+  border-bottom-width: 10px;
+  border-bottom-style: solid;
+  border-left-width: 10px;
+  border-left-style: solid;
+  border-right-width: 10px;
+  border-right-style: solid;
+  border-color: white;
 }
-body .box.darken-1 {
-  background-color: var(--color);
-  filter: brightness(0.85);
-}
-body .box.darken-2 {
-  background-color: var(--color);
-  filter: brightness(0.75);
-}
-body .box.darken-3 {
-  background-color: var(--color);
-  filter: brightness(0.55);
-}
-body .box.darken-4 {
-  background-color: var(--color);
-  filter: brightness(0.45);
-}
-body .box.lighten-1 {
-  background-color: var(--color);
-  filter: brightness(3.5);
-}
-body .box.lighten-2 {
-  background-color: var(--color);
-  filter: brightness(4.5);
-}
-body .box.lighten-3 {
-  background-color: var(--color);
-  filter: brightness(5.5);
-}
-body .box.lighten-4 {
-  background-color: var(--color);
-  filter: brightness(7);
+.container .container__button:hover {
+  background-color: rgb(11, 77, 11);
 }
 
 /*# sourceMappingURL=/styles.164d45a1.css.map */
